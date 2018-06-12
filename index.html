@@ -11,15 +11,11 @@
 </head>
 <body>
     <script>
-        $("#test").click(function(){
-            alert("lol clicked!");
-        });
-
-        var x = document.getElementById("test");
-        x.addEventListener(click, test());
-        function test() {
-            alert("Lol ok old way")
-        }
+        $(function() {
+            $("#test").click(function(){
+                alert("lol clicked!");
+            });
+        });       
     </script>
 
     <p id="test">Hallo Welt!</p>
