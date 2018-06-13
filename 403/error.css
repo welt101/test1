@@ -23,3 +23,6 @@
     filter: dropshadow(color=#000000, offx=0, offy=1);   
     font-family: Arial, Helvetica, sans-serif;
   }
+p.info {
+    text-align: center;
+}
