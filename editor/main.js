@@ -1,7 +1,3 @@
-function hello() {
-    alert("Hello!")
-}
-
-function animate() {
-    
+function setStartTemplate() {
+    $
 }

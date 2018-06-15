@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="styling.css" />    
 </head>
-<body>
-    <script>
-        $(function() {
-            hello();
-        });
-    </script>
-    <h2 style="text-align: center;">HTML Editor</h2>
-    <h4 style="text-align: center;">von Adrian</h4>
-
-    <hr />
-
+<body>    
+    <div class="titleclass">
+        <h2 style="text-align: center;">HTML Editor</h2>
+        <h4 style="text-align: center;">von Adrian</h4>    
+    </div>  
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <button type="button" class="btn btn-primary" onclick="hello()">Klick mich!</button>
+            <div class="col" id="s1">
+                <button type="button" class="btn btn-primary" id="setStartTemplate">Template</button>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">HTML</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" id="eingabeFeld"></textarea>
+                  </div>
             </div>
-            <div class="col">
+            <div class="col" id="s2"> 
                 <p>Lol okay</p>
             </div>
           </div>
     </div>
         
-    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("#setStartTemplate").click(function() {
+                $("#eingabeFeld").val("<!DOCTYPE html><html><head></head><body></body></html>"); 
+            });                     
+        });
+    </script> 
 </body>
 </html>

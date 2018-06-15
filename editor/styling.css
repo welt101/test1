@@ -1,13 +1,15 @@
-.button1 {
-    background-color: #4CAF50;
-    border: none;
+div.titleclass {
+    background: #0288D1;
     color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
 }
 
-.button1:hover {
-    background-color: green;
+div#s1 {
+    padding: 10px;
+    background: tomato;
+}
+
+body {
+    background: #0288D1;
 }
